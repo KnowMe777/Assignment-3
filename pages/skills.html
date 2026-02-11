@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+
+    <!-- using TialwindCSS CDN version-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#fffcf9]">
+    <nav
+      class="bg-[#507dbc] p-4 sm:p-6 flex items-center justify-between sm:justify-center relative"
+    >
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <label
+        for="menu-toggle"
+        class="sm:hidden text-white text-2xl cursor-pointer"
+      >
+        ☰
+      </label>
+
+      <div class="hidden sm:flex gap-5 sm:gap-9 px-5">
+        <a
+          href="/"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          About Me
+        </a>
+        <a
+          href="/pages/skills.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Skills
+        </a>
+        <a
+          href="/pages/education.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Education
+        </a>
+        <a
+          href="/pages/contact.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Contact
+        </a>
+      </div>
+
+      <div
+        class="fixed top-0 left-0 h-full w-64 bg-[#507dbc] transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out sm:hidden shadow-lg"
+      >
+        <div class="flex justify-end p-4">
+          <label for="menu-toggle" class="text-white text-2xl cursor-pointer"
+            >✕</label
+          >
+        </div>
+
+        <div class="flex flex-col gap-6 px-8 mt-8">
+          <a
+            href="/"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >About Me</a
+          >
+          <a
+            href="/pages/skills.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Skills</a
+          >
+          <a
+            href="/pages/education.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Education</a
+          >
+          <a
+            href="/pages/contact.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="flex flex-col items-center justify-center p-4 gap-6 max-w-md mx-auto"
+    >
+      <h1 class="font-montserrat text-center font-bold text-xl sm:text-2xl">
+        Skills
+      </h1>
+
+      <div class="flex flex-col w-full gap-4">
+        <!-- using two divs for progress bar -->
+        <div class="flex items-center gap-2 sm:gap-3 w-full">
+          <label class="w-24 font-inter">React.js</label>
+          <div class="flex-1 bg-gray-200 h-2 sm:h-3 rounded-full">
+            <div
+              class="bg-[#507dbc] h-2 sm:h-3 rounded-full transition-all duration-500"
+              style="width: 67%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3 w-full">
+          <label class="w-24 font-inter">HTML</label>
+          <div class="flex-1 bg-gray-200 h-2 sm:h-3 rounded-full">
+            <div
+              class="bg-[#507dbc] h-2 sm:h-3 rounded-full transition-all duration-500"
+              style="width: 67%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3 w-full">
+          <label class="w-24 font-inter">Vite</label>
+          <div class="flex-1 bg-gray-200 h-2 sm:h-3 rounded-full">
+            <div
+              class="bg-[#507dbc] h-2 sm:h-3 rounded-full transition-all duration-500"
+              style="width: 67%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3 w-full">
+          <label class="w-24 font-inter">Webpack</label>
+          <div class="flex-1 bg-gray-200 h-2 sm:h-3 rounded-full">
+            <div
+              class="bg-[#507dbc] h-2 sm:h-3 rounded-full transition-all duration-500"
+              style="width: 67%"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3 w-full">
+          <label class="w-24 font-inter">Solidity</label>
+          <div class="flex-1 bg-gray-200 h-2 sm:h-3 rounded-full">
+            <div
+              class="bg-[#507dbc] h-2 sm:h-3 rounded-full transition-all duration-500"
+              style="width: 67%"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+
+    <!-- using TialwindCSS CDN version-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- linked the css file -->
+
+    <!-- <link rel="stylesheet" href="../index.css" /> -->
+  </head>
+  <body>
+    <nav
+      class="bg-[#507dbc] p-4 sm:p-6 flex items-center justify-between sm:justify-center relative"
+    >
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <label
+        for="menu-toggle"
+        class="sm:hidden text-white text-2xl cursor-pointer"
+      >
+        ☰
+      </label>
+
+      <div class="hidden sm:flex gap-5 sm:gap-9 px-5">
+        <a
+          href="/"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          About Me
+        </a>
+        <a
+          href="/pages/skills.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Skills
+        </a>
+        <a
+          href="/pages/education.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Education
+        </a>
+        <a
+          href="/pages/contact.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Contact
+        </a>
+      </div>
+
+      <div
+        class="fixed top-0 left-0 h-full w-64 bg-[#507dbc] transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out sm:hidden shadow-lg"
+      >
+        <div class="flex justify-end p-4">
+          <label for="menu-toggle" class="text-white text-2xl cursor-pointer"
+            >✕</label
+          >
+        </div>
+
+        <div class="flex flex-col gap-6 px-8 mt-8">
+          <a
+            href="/"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >About Me</a
+          >
+          <a
+            href="/pages/skills.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Skills</a
+          >
+          <a
+            href="/pages/education.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Education</a
+          >
+          <a
+            href="/pages/contact.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="flex flex-col p-4 gap-6">
+      <h1 class="font-montserrat text-center font-bold text-xl sm:text-2xl">
+        Education
+      </h1>
+      <table
+        class="min-w-full border border-gray-200 rounded-lg overflow-hidden"
+      >
+        <tbody>
+          <tr class="bg-gray-100">
+            <td class="w-1/4 px-4 py-2 font-semibold text-gray-700">
+              University Name
+            </td>
+            <td class="px-4 py-2 text-gray-800">
+              The Islamia University of Bahawalpur
+            </td>
+          </tr>
+
+          <tr class="even:bg-gray-50">
+            <td class="w-1/4 px-4 py-2 font-semibold text-gray-700">CGPA</td>
+            <td class="px-4 py-2 text-gray-800">3.5</td>
+          </tr>
+
+          <tr class="bg-gray-100">
+            <td class="w-1/4 px-4 py-2 font-semibold text-gray-700">
+              Duration
+            </td>
+            <td class="px-4 py-2 text-gray-800">2022 - 2026</td>
+          </tr>
+
+          <tr class="even:bg-gray-50">
+            <td class="w-1/4 px-4 py-2 font-semibold text-gray-700">
+              Coursework
+            </td>
+            <td class="px-4 py-2 text-gray-800">
+              Web Development, Object Oriented Programming, Machine Learning,
+              Computer Networks, Information Security, Database Systems, IT
+              Project Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

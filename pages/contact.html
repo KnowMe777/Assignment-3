@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <!-- using TialwindCSS CDN version-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- linked the css file -->
+
+    <!-- <link rel="stylesheet" href="../index.css" /> -->
+  </head>
+  <body>
+    <nav
+      class="bg-[#507dbc] p-4 sm:p-6 flex items-center justify-between sm:justify-center relative"
+    >
+      <!-- Hidden Checkbox -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <!-- Hamburger Button (Mobile) -->
+      <label
+        for="menu-toggle"
+        class="sm:hidden text-white text-2xl cursor-pointer"
+      >
+        ☰
+      </label>
+
+      <!-- Desktop Links (UNCHANGED) -->
+      <div class="hidden sm:flex gap-5 sm:gap-9 px-5">
+        <a
+          href="/"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          About Me
+        </a>
+        <a
+          href="/pages/skills.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Skills
+        </a>
+        <a
+          href="/pages/education.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Education
+        </a>
+        <a
+          href="/pages/contact.html"
+          class="font-poppins text-white transition-transform hover:scale-110 duration-200"
+        >
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile Slide Menu -->
+      <div
+        class="fixed top-0 left-0 h-full w-64 bg-[#507dbc] transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out sm:hidden shadow-lg"
+      >
+        <!-- Close Button -->
+        <div class="flex justify-end p-4">
+          <label for="menu-toggle" class="text-white text-2xl cursor-pointer"
+            >✕</label
+          >
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-col gap-6 px-8 mt-8">
+          <a
+            href="/"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >About Me</a
+          >
+          <a
+            href="/pages/skills.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Skills</a
+          >
+          <a
+            href="/pages/education.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Education</a
+          >
+          <a
+            href="/pages/contact.html"
+            class="text-white text-lg hover:translate-x-2 transition duration-200"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="mx-auto p-6 bg-white rounded-xl shadow-md">
+      <h1 class="text-xl sm:text-2xl font-montserrat font-bold text-center">
+        Contact Me
+      </h1>
+
+      <form action="/" class="space-y-5">
+        <!-- name field -->
+        <div class="flex flex-col">
+          <label for="name" class="mb-2 font-inter font-medium">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            class="font-inter px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-200"
+          />
+        </div>
+
+        <!-- email field -->
+        <div class="flex flex-col">
+          <label for="email" class="mb-2 font-inter font-medium">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            class="font-inter px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-200"
+          />
+        </div>
+
+        <!-- message field -->
+        <div class="flex flex-col">
+          <label for="message" class="mb-2 font-inter font-medium"
+            >Message</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your Message"
+            rows="4"
+            class="font-inter px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-200 resize-none"
+          ></textarea>
+        </div>
+
+        <!-- submit button -->
+        <button
+          type="submit"
+          class="w-full bg-[#507dbc] text-white font-poppins font-semibold py-2 px-4 rounded-lg shadow-md transition duration-200"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
